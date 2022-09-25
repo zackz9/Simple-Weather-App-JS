@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App using Js and Accuweather API</title>
+</head>
+<body>
+
+    <div class="container my-5 mx-auto">
+        <h1 class=" text-center my-4 text-light">
+            Simple Weather App using Js and Accuweather API
+        </h1>
+
+        <form class="changeLocation text-center text-light my-4">
+            <label class="text-left" for="city">Enter a location for weather info</label>
+            <input type="text" name="city" placeholder="" class="form-control my-3 py-4">
+        </form>
+
+        <div class="card shadow-lg d-none">
+            <img src="https://via.placeholder.com/400" class="time card-img" alt="">
+
+            <div class="icon bg-light mx-auto text-center">
+                <img src="" alt="">
+            </div>
+
+            <div class="details text-uppercase text-center">
+                <h3 class="my-3">City name</h3>
+                <div class="my-3">Weather condition</div>
+                <div class="display-4 my-4">
+                    <span>Temp</span>
+                    <span>&deg;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/app.js"></script>
+    
+</body>
+</html>
